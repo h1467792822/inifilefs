@@ -2,6 +2,7 @@ SUBDIRS = lib bin include
 
 EXTRA_DIST = \
 	     README \
+	     syslog-inifilefs.conf \
 	     libinifilefs.pc.in \
 	     $(top_srcdir)/include \
 	     $(top_srcdir)/build/Makefile.common

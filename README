@@ -15,6 +15,7 @@ to create key-value item
 6. echo "value" > /tmp/ini/section/key
 to modify value of an item
 
+
 how to compile it?
 1. install fuse please
 notion: two configure options: --with-fusecflags --with-fuseldflags,the default is pkg-config --libs --cflags fuse
