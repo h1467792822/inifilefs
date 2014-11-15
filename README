@@ -1,4 +1,4 @@
-@auth 1467792822@qq.com
+@author 1467792822@qq.com
 
 this project aims to access ini file via file system based on fuse and github.com/nedevilla/iniparser
 
