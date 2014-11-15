@@ -1,0 +1,29 @@
+
+this project aims to access ini file via file system based on fuse and github.com/nedevilla/iniparser
+
+how to use it?
+
+1. mdir /tmp/ini
+2. inifiles /tmp/ini /tmp/inifile
+if /tmp/inifile not existed, it will be created
+3. tree /tmp/ini
+4. mkdir /tmp/ini/section
+to create a section in ini file
+5. touch /tmp/ini/section/key
+to create key-value item
+6. echo "value" > /tmp/ini/section/key
+to modify value of an item
+
+how to compile it?
+1. install fuse please
+notion: two configure options: --with-fusecflags --with-fuseldflags,the default is pkg-config --libs --cflags fuse
+2. download iniparser and compile it
+2.1 download: git clone https://github.com/nedevilla/iniparser
+2.2 compile: cd iniparser ; make
+3. compile inifilefs
+3.1 autoreconf --install
+3.2 configure --with-iniparserdir=[iniparserdir]
+3.3 make && make install
+
+
+

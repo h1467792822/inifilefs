@@ -1,0 +1,11 @@
+
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libinifilefs
+Description: access inifile by filesystem
+Version: @VERSION@
+Libs: -L${libdir} -linifilefs
+Cflags: -I${includedir} 
